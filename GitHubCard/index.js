@@ -109,8 +109,8 @@ function gitCard(data){
     //UserName
     gitUserName.classList.add('username');
 
-    //Set Content
-    gitImage.setAttribute('src', data.avatar_url);
+      //Set Content
+    gitImage.src = data.avatar_url;
     gitName.textContent = `${data.name}`;
     gitUserName.textContent = data.login;
     gitLocation.textContent = data.location;
