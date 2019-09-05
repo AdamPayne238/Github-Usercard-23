@@ -89,8 +89,13 @@ function gitCard(data){
 
     gitInfo.appendChild(gitProfile);
     // gitProfile.textContent =  `Profile: ${data.html_url}`;
-    gitProfile.appendChild(gitProfileA)
-    gitProfileA.textContent = `Profile: ${data.html_url}`;
+    gitProfile.appendChild(gitProfileA);
+    gitProfile.textContent = 'Profile: ';
+    gitProfileA.textContent = `${data.html_url}`;
+    //Makes link clickable but also Profile
+    gitProfileA.setAttribute('href', data.html_url);
+
+  
 
     gitProfile.appendChild(gitProfileA);
     // gitProfile.appendChild(newA);
